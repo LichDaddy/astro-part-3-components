@@ -1,5 +1,6 @@
 ---
-import Header from '../components/Header.astro';
+import Navigation from '../components/Navigation.astro';
+const websiteName = 'MTG';
 ---
 
 <html lang="en">
@@ -8,14 +9,21 @@ import Header from '../components/Header.astro';
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>{websiteName}</title>
+
+		<style>
+			body {
+				color: rgb(24, 192, 127);
+				background-color: lavender;
+			}
+		</style>
 
 	</head>
 	<body>
 
-		<Header/>
+		<Navigation />
 
-		<h1>Astro</h1>
+		<h1>{websiteName}</h1>
 
 	</body>
 </html>
