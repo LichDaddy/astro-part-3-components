@@ -1,0 +1,56 @@
+---
+import Navigation from '../components/Navigation.astro';
+const websiteName = 'Formats';
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{websiteName}</title>
+
+		<style>
+			body {
+				color: black;
+				background-color: rgb(199, 199, 253);
+			}
+		</style>
+
+	</head>
+	<body>
+
+		<Navigation />
+
+		<h1>{websiteName}</h1>
+
+		<h2>
+			What formats are supported for competitve play?
+		</h2>
+
+		<p>
+			Draft: This is a limited format, where players open packs and build decks from them. It is a great way to get into competitive play, as it is a level playing field.
+			There are no cards that are too expensive, and everyone has the same chance of getting the best cards. Every time a new set is released there is a draft format for it 
+			so the card pool changes and you can use this as a way to build your collection.
+		</p>
+
+		<p>
+			Standard: This is the easiest format to get into. It uses the most recent sets, and rotates once a year. It includes the sets from the last three years. 
+			This is the format that is used for the World Championships. Most players start their competitive journey here.
+		</p>
+
+		<p>
+			Pioneer: This is a non-rotating format that uses cards from Return to Ravnica onwards. It is a great format for players who want to play with cards that are no longer in Standard.
+			The cards available in this format are more powerful than those in Standard, but less powerful than those in Modern. Also the mana bases are decent enough to support most two 
+			color strategies. 
+		</p>
+
+		<p>
+			Modern: This is a non-rotating format that uses cards from 8th Edition onwards. The cards available in this format are more powerful than those in Pioneer, 
+			but less powerful than those in Legacy. The mana bases in this format support basically all color combinations. Most players can find an archetype that they 
+			enjoy playing in this format and lends themselves to their playstyle.
+		</p>
+
+	</body>
+</html>
